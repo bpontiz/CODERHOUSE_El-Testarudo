@@ -214,6 +214,17 @@
     .homeBold, .aboutusBold, .productsBold, .directionsBold, .workwithusBold{
         font-weight: bold;
     }
+
+    .h3Directions {
+        animation-duration: 2s;
+        animation-name: fadeIn;
+    }
+
+    li:hover, h1:hover {
+        transform: scale(1.1);
+        transition: 0.25s;
+        font-weight: bold;
+    }
 }
 
 @media (min-width: 768px) {
@@ -248,7 +259,7 @@
     h1 {
         font-size: 2rem;
         color: #3d342d;
-        font-family: 'Playfair Display SC', serif
+        font-family: 'Playfair Display SC', serif;
     }
     
     .infoTitlediv {
@@ -290,7 +301,17 @@
     .homeHover:hover, .aboutUsHover:hover, .productsHover:hover, .directionsHover:hover, .workWithUsHover:hover{
         font-weight: bold;
     }
+
+    .homeBold, .aboutusBold, .productsBold, .directionsBold, .workwithusBold{
+        font-weight: bold;
+    }
     
+    li:hover, h1:hover {
+        transform: scale(1.1);
+        transition: 0.25s;
+        font-weight: bold;
+    }
+
     .imgCellar, .imgCellardiv {
         width: 100%;
         height: 100%;
@@ -323,11 +344,13 @@
         width: 100%;
         margin-top: 10%;
     }
+    
     .aboutUsVideo{
         display: inline-block;
         width: 100%;
         height: 500px;
     }
+
     .paboutUs{
         padding: 2rem;
         color: black;
@@ -346,13 +369,16 @@
     .boxImgWines{
         width: 100%;
     }
+
     .imgWinesA, .imgWinesB, .imgBarricks{
         padding: 0;
         width: 33%;
     }
+
     .mainProducts{
         margin-top: 10%;
     }
+
     .pProducts{
         text-align: center;
         padding: 3rem;
@@ -365,30 +391,36 @@
         padding: 2rem;
         top: 100px;
     }
+
     .boxImgDirectionsFondo{
         top: 100px;
         width: 100%;
         opacity: 0.6;
         z-index: 0;
     }
+
     .mainDirections{
         background-color: #2C5C41;
         z-index: -1;
         margin-top: 100px;
     }
+
     .direction1{
         padding: 2rem;
         color: white;
         font-size: 1.25rem;
     }
+
     .imgFondo{
         width: 100%;
     }
+
     .mainSectionDirections{
         display: flex;
         text-align: center;
         align-items: center;
     }
+
     .h3Directions{
         position: absolute;
         margin-top: 150px;
@@ -408,13 +440,30 @@
         width: 100%;
         margin-top: 100px;
     }
+
     .workForm{
         color: black;
         text-align: center;
         font-family: 'Playfair Display SC', serif;
         display: inline-block;
     }
+
     .imgWork{
         width: 50%;
     }
+
+    .h3Directions {
+        animation-duration: 2s;
+        animation-name: fadeIn;
+    }
 }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
